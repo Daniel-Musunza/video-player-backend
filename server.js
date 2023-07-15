@@ -21,7 +21,9 @@ app.get('/', (req, res) => {
 app.get('/assets/index-dac40a44.js', (req, res) => {
   res.sendFile(path.join(__dirname, 'assets', 'index-dac40a44.js'));
 });
-
+app.get('/assets/index-cd401653.css', (req, res) => {
+  res.sendFile(path.join(__dirname, 'assets', 'index-cd401653.css'));
+});
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
